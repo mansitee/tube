@@ -10,7 +10,7 @@ const TrendingSection = () => {
   const [trending, setTrending] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [videoUrl, setVideoUrl] = useState(null);
-  const [region, setRegion] = useState("IN");
+  const [region, setRegion] = useState("ID");
   const [isLoading, setIsLoading] = useState(false);
 
   // function to handle the click event
@@ -57,6 +57,10 @@ const TrendingSection = () => {
 
   // list of countries for dropdown options
   const countries = [
+    { code: "ID", name: "Indonesia" },
+    { code: "JP", name: "Japanese" },
+    { code: "TH", name: "Thailand" },
+    { code: "MY", name: "Malaysia" },
     { code: "IN", name: "India" },
     { code: "US", name: "US" },
     { code: "DE", name: "Germany" },
