@@ -15,6 +15,17 @@ function VideoModal({ showModal, setShowModal, videoUrl }) {
 
                         <ReactPlayer url={videoUrl} onError={(e) => console.log(e)} controls={true} width="100%" height="100%" playing={true} className="border border-white border-opacity-25" />
 <a href="https://youtube-download-api.vercel.app/api?url={videoUrl}">My Tutorial</a>
+<a
+
+                                                        title="Title"
+
+                                                        rel="noreferrer"
+
+                                                        className="title cursor-pointer text-base font-semibold text-blue-600 hover:underline text-black dark:text-white hover:text-purple-400 !important"
+
+                                                        onClick={() => { handleVideoClick(videoUrl) }}
+
+                                                    >
                         <button className="absolute top-4 right-4 text-white text-2xl hover:text-gray-300 cursor-pointer" onClick={() => setShowModal(false)}>X</button>
 
                     </div>
