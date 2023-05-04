@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 flex justify-between items-center w-full">
             <div className="flex items-center text-white">
                 <a
-                    href="https://github.com/NeeRaj-2401/ReacTube"
+                    href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center cursor-pointer"
@@ -18,12 +18,12 @@ const Footer = () => {
             </div>
             <span className="text-white sm:text-xl ml-2 cursor-pointer ">
                 <a
-                    href="https://github.com/NeeRaj-2401"
+                    href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center"
                 >
-                    NRJ YDV &copy;
+                    suka suka &copy;
                 </a>
             </span>
             <div className="flex items-center justify-center">
