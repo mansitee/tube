@@ -15,7 +15,18 @@ function VideoModal({ showModal, setShowModal, videoUrl }) {
 
                         <ReactPlayer url={videoUrl} onError={(e) => console.log(e)} controls={true} width="100%" height="100%" playing={true} className="border border-white border-opacity-25" />
 <Link href="https://youtube-download-api.vercel.app/api?url={videoUrl}">Download</Link>
-        
+ <iframe
+                id="videodownload"
+                title="download"
+                style={{
+                  width: "230px",
+                  height: "60px",
+                  border: "0",
+                  overflow: "hidden",
+                }}
+                scrolling="no"
+                src={`https://loader.to/api/button/?url=https://www.youtube.com/watch?v=${videoUrl}&f=mp3`}
+              ></iframe>       
                                                                                                             
                         <button className="absolute top-4 right-4 text-white text-2xl hover:text-gray-300 cursor-pointer" onClick={() => setShowModal(false)}>X</button>
 
